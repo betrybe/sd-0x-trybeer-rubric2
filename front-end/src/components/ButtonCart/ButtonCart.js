@@ -18,7 +18,7 @@ const ButtonCart = ({ totalPriceCart }) => {
         id="btn-cart"
         data-testid="checkout-bottom-btn"
         className="btn btn-success btn-cart"
-        disabled={ !(totalPriceCartLs > zero) || false }
+        disabled={ totalPriceCartLs <= zero || false }
         onClick={ () => history.push('/checkout') }
       >
         {'Ver Carrinho | '}
